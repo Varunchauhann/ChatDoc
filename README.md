@@ -1,5 +1,5 @@
 
-##ChatDoc
+## ChatDoc
 Chat with your documents offline using AI. No data leaves your system. Internet connection is only required to install the tool and download the AI models. It is based on [PrivateGPT](https://github.com/imartinez/privateGPT) but has more features.
 
 ## Features

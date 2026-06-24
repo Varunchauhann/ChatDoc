@@ -1,21 +1,11 @@
-# [ChatDocs](https://github.com/marella/chatdocs) [![PyPI](https://img.shields.io/pypi/v/chatdocs)](https://pypi.org/project/chatdocs/) [![tests](https://github.com/marella/chatdocs/actions/workflows/tests.yml/badge.svg)](https://github.com/marella/chatdocs/actions/workflows/tests.yml)
 
+##ChatDoc
 Chat with your documents offline using AI. No data leaves your system. Internet connection is only required to install the tool and download the AI models. It is based on [PrivateGPT](https://github.com/imartinez/privateGPT) but has more features.
-
-![Web UI](https://github.com/marella/chatdocs/raw/main/docs/demo.png)
-
-**Contents**
-
-- [Features](#features)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Configuration](#configuration)
-- [GPU](#gpu)
 
 ## Features
 
 - Supports GGML/GGUF models via [CTransformers](https://github.com/marella/ctransformers)
-- Supports 🤗 Transformers models
+- Supports Transformers models
 - Supports GPTQ models
 - Web UI
 - GPU support
@@ -75,18 +65,7 @@ chatdocs ui
 
 Open http://localhost:5000 in your browser to access the web UI.
 
-It also has a nice command-line interface:
 
-```sh
-chatdocs chat
-```
-
-<details>
-<summary><strong>Show preview</strong></summary><br>
-
-![Demo](https://github.com/marella/chatdocs/raw/main/docs/cli.png)
-
-</details>
 
 ## Configuration
 
@@ -126,15 +105,15 @@ ctransformers:
   model_type: llama
 ```
 
-### 🤗 Transformers
+###  Transformers
 
-To use 🤗 Transformers models, add the following to your `chatdocs.yml`:
+To use  Transformers models, add the following to your `chatdocs.yml`:
 
 ```yml
 llm: huggingface
 ```
 
-To change the 🤗 Transformers model, add and change the following in your `chatdocs.yml`:
+To change the  Transformers model, add and change the following in your `chatdocs.yml`:
 
 ```yml
 huggingface:
@@ -143,7 +122,7 @@ huggingface:
 
 > **Note:** When you add a new model for the first time, run `chatdocs download` to download the model before using it.
 
-To use GPTQ models with 🤗 Transformers, install the necessary packages using:
+To use GPTQ models with Transformers, install the necessary packages using:
 
 ```sh
 pip install chatdocs[gptq]
@@ -179,9 +158,9 @@ You may have to install the CUDA libraries using:
 pip install ctransformers[cuda]
 ```
 
-### 🤗 Transformers
+###  Transformers
 
-To enable GPU (CUDA) support for the 🤗 Transformers model, add the following to your `chatdocs.yml`:
+To enable GPU (CUDA) support for the Transformers model, add the following to your `chatdocs.yml`:
 
 ```yml
 huggingface:
@@ -190,6 +169,4 @@ huggingface:
 
 You may have to reinstall PyTorch with CUDA enabled by following the instructions [here](https://pytorch.org/get-started/locally/).
 
-## License
 
-[MIT](https://github.com/marella/chatdocs/blob/main/LICENSE)
